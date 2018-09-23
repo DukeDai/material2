@@ -1,26 +1,30 @@
 Angular Material comes packaged with Angular CLI schematics to make
 creating Material applications easier.
 
-## Install Schematics
-Schematics come packaged with Angular Material, so once you have
+### Install Schematics
+Schematics come packaged with Angular Material. Once you have
 installed the npm package, they will be available via the Angular CLI.
 
-Using the command below will automatically install Angular Material for you
+Using the command below will install Angular Material for you
 and run the install schematic.
 
 ```
 ng add @angular/material
 ```
 
-The install schematic will help you to quickly add Material to a new project. 
+The install schematic will help you add Material to a new project. 
 This schematic will:
 
 - Ensure project dependencies are placed in `package.json`
 - Ensure project dependencies are placed in your app module
-- Add Prebuilt or Setup Custom Theme
+- Add a Prebuilt Theme or Setup a Custom Theming configuration
 - Add Roboto fonts to your index.html
-- Apply simple CSS reset to body
-- Install and load `hammerjs` for gestures in your project.
+- Add the Material Icon font to your index.html
+- Add global styles to
+  - Remove margins from `body`
+  - Set `height: 100%` on `html` and `body`
+  - Make Roboto the default font of your app
+- Install and import `hammerjs` for touch gesture support in your project
 
 ## Generator Schematics
 In addition to the install schematic, Angular Material has three schematics it comes packaged with:
